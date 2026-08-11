@@ -18,7 +18,7 @@ export type Profile = {
   isDemo: true;
   nav: string[];
   hero: { title: string[]; subtitle: string; description: string; primaryCta: string; secondaryCta: string; visualTitle: string; visualBody: string };
-  person: { name: string; role: string; area: string; line: string; phone: string; email: string; note: string };
+  person: { name: string; role: string; area: string; line: string; phone: string; email: string; note: string; image: string };
   showcase: { title: string; allLabel: string; bookingLabel: string; cards: ShowcaseItem[] };
   services: { title: string; cards: { title: string; description: string; icon: string }[] };
   modules: string[];

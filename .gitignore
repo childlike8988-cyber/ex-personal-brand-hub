@@ -13,8 +13,17 @@ out/
 .turbo/
 .vercel/
 .cache/
+cache/
+tmp/
+temp/
+temporary/
 coverage/
 *.tsbuildinfo
+
+# Key material and local credentials
+*.pem
+*.key
+credentials/
 
 # OS and editor files
 .DS_Store
