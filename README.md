@@ -43,7 +43,7 @@ npm run build
 
 The project uses Next.js static export and writes the production site to `out/` after `npm run build`.
 
-Root-hosted static deployment is supported. For GitHub Pages project sites (`https://<account>.github.io/<repository>/`), configure `basePath` and `assetPrefix` after the final repository name is known, and update root-relative demo asset URLs to use that same path. Do not hard-code a repository path before that decision.
+GitHub Actions builds this project site with `NEXT_PUBLIC_BASE_PATH=/ex-personal-brand-hub`, which configures Next.js `basePath` and `assetPrefix`. Demo image URLs use `src/lib/assetPath.ts`, so local development remains at `/` while the Pages build serves assets from the repository path.
 
 ## Demo reference material
 
