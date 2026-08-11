@@ -8,6 +8,11 @@ const navTargets: Record<string, string> = { 首頁: "top", 精選物件: "showc
 export function Header({ profile }: { profile: Profile }) {
   const [open, setOpen] = useState(false);
   return <header className="site-header"><div className="container header-inner">
+    <a className="ecosystem-back-link" href="https://childlike8988-cyber.github.io/ex-learning-knowledge-hub/" aria-label="返回 E.X Creator Studio">
+      <span className="ecosystem-back-link__desktop">← 返回 E.X Creator Studio</span>
+      <span className="ecosystem-back-link__mobile">← E.X Creator Studio</span>
+      <small>Creator Ecosystem</small>
+    </a>
     <a className="brand" href="#top" aria-label="E.X 個人品牌網站首頁"><strong>E.X</strong><span><small>Personal Brand Website</small><b>個人品牌網站</b></span></a>
     <nav className={open ? "nav is-open" : "nav"} aria-label="主要導覽">{profile.nav.map((item) => <a key={item} href={`#${navTargets[item]}`} onClick={() => setOpen(false)}>{item}</a>)}</nav>
     <a className="button button-gold header-cta" href="#contact">立即諮詢</a>

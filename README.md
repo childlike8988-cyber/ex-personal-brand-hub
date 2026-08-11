@@ -48,3 +48,7 @@ GitHub Actions builds this project site with `NEXT_PUBLIC_BASE_PATH=/ex-personal
 ## Demo reference material
 
 `docs/ui-reference/` contains development-only visual references. They are not production assets and are not referenced by the application bundle.
+
+## Related Projects
+
+- [E.X Creator Studio](https://childlike8988-cyber.github.io/ex-learning-knowledge-hub/) — AI Creative Center × Creator Academy
