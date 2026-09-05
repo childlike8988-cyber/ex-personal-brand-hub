@@ -43,7 +43,7 @@ npm run build
 
 The project uses Next.js static export and writes the production site to `out/` after `npm run build`.
 
-GitHub Actions builds this project site with `NEXT_PUBLIC_BASE_PATH=/ex-personal-brand-hub`, which configures Next.js `basePath` and `assetPrefix`. Demo image URLs use `src/lib/assetPath.ts`, so local development remains at `/` while the Pages build serves assets from the repository path.
+The custom-domain production build uses the root path (`NEXT_PUBLIC_BASE_PATH` unset), so Next.js static assets and routes resolve from `/`. The shared `src/lib/assetPath.ts` helper still supports an explicit base path for isolated legacy builds, but the GitHub Pages production workflow must not set one for `brand.excreatorstudio.com`.
 
 ## Demo reference material
 
@@ -51,4 +51,4 @@ GitHub Actions builds this project site with `NEXT_PUBLIC_BASE_PATH=/ex-personal
 
 ## Related Projects
 
-- [E.X Creator Studio](https://childlike8988-cyber.github.io/ex-learning-knowledge-hub/) — AI Creative Center × Creator Academy
+- [E.X Creator Studio](https://excreatorstudio.com/) — AI Creative Center × Creator Academy
